@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>055ec7a1-d990-45fd-8351-7d0a5d1c523b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>www\fabfile.py</StartupFile>
+    <StartupFile>www\wsgiapp.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

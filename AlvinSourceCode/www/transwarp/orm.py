@@ -9,7 +9,8 @@ Database operation module. This module is independent with web module.
 
 import time, logging
 
-import db
+#import db
+from transwarp import db
 
 class Field(object):
 

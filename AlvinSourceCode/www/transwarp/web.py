@@ -9,10 +9,14 @@ __author__ = 'Michael Liao'
 
 import types, os, re, cgi, sys, time, datetime, functools, mimetypes, threading, logging, urllib, traceback
 
+'''
+cStringIO and StringIO are gone in Python 3.x version, instead, use io module. 
 try:
-    from StringIO import StringIO
+    from cStringIO import StringIO
 except ImportError:
     from StringIO import StringIO
+'''
+from io import StringIO
 
 # thread local object for storing request and response:
 
