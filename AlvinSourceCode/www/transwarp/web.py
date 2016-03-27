@@ -816,7 +816,8 @@ class Request(object):
         >>> r.path_info
         '/test/a b.html'
         '''
-        return urllib.unquote(self._environ.get('PATH_INFO', ''))
+        #return urllib.unquote(self._environ.get('PATH_INFO', ''))
+        return urllib.parse.unquote(self._environ.get('PATH_INFO', ''))
 
     @property
     def host(self):
