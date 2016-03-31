@@ -267,7 +267,7 @@ class Model(dict):
         '''
         Find by 'select count(pk) from table' and return integer.
         '''
-        return db.select_int('select count(`%s`) from `%s`' % (cls.__primary_key__.name, cls.__table__))
+        return db.select_int('select count(`%s`) from `%s`' % (cls.__primary_key__, cls.__table__))
 
     @classmethod
     def count_by(cls, where, *args):

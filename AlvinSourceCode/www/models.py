@@ -17,6 +17,7 @@ def next_id():
 
 class User(Model):
     __table__ = 'users'
+    __primary_key__ = 'id'
 
     id = StringField(primary_key=True, default=next_id, ddl='varchar(50)')
     email = StringField(updatable=False, ddl='varchar(50)')
@@ -28,6 +29,7 @@ class User(Model):
 
 class Blog(Model):
     __table__ = 'blogs'
+    __primary_key__ = 'id'
 
     id = StringField(primary_key=True, default=next_id, ddl='varchar(50)')
     user_id = StringField(updatable=False, ddl='varchar(50)')
@@ -40,6 +42,7 @@ class Blog(Model):
 
 class Comment(Model):
     __table__ = 'comments'
+    __primary_key__ = 'id'
 
     id = StringField(primary_key=True, default=next_id, ddl='varchar(50)')
     blog_id = StringField(updatable=False, ddl='varchar(50)')
