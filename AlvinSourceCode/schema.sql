@@ -50,3 +50,5 @@ create table comments (
 -- admin@example.com / password
 
 insert into users (`id`, `email`, `password`, `admin`, `name`, `image`, `created_at`) values ('0010018336417540987fff4508f43fbaed718e263442526000', 'admin@example.com', '5f4dcc3b5aa765d61d8327deb882cf99', 1, 'Administrator', 'AdminImage', 1402909113.628);
+insert into blogs (`id`, `user_id`, `user_name`, `user_image`, `name`, `summary`, `content`, `created_at`) values ('0010018336417540987fff4508f43fbaed718e263442526012', '0010018336417540987fff4508f43fbaed718e263442526000', 'admin', 'AdminImage', 'Guest', 'Great', 'This is wonderful!', 1402909112.628);
+insert into comments (`id`, `blog_id`, `user_id`, `user_name`, `user_image`, `content`, `created_at`) values ('0010018336417540987fff4508f43fbaed718e263442526013', '0010018336417540987fff4508f43fbaed718e263442526012', '0010018336417540987fff4508f43fbaed718e263442526000', 'admin', 'AdminImage', 'A good comments!', 1402909111.628);
